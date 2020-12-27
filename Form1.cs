@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace FinanceProject
 {
@@ -23,5 +24,6 @@ namespace FinanceProject
             tradeForm.Show();
 
         }
+
     }
 }
