@@ -16,5 +16,12 @@ namespace FinanceProject
         {
             InitializeComponent();
         }
+
+        private void InsertNewTradesButton_Click(object sender, EventArgs e)
+        {
+            TradeForm tradeForm = new TradeForm();
+            tradeForm.Show();
+
+        }
     }
 }

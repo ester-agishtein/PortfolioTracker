@@ -1,6 +1,6 @@
 ﻿namespace FinanceProject
 {
-    partial class TradeFom
+    partial class TradeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,7 @@
             this.addButton.TabIndex = 0;
             this.addButton.Text = "Add Trade";
             this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.button1_Click);
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // tickerLabel
             // 

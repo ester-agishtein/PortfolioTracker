@@ -28,9 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.DailyValuesTableButtonPanel = new System.Windows.Forms.Panel();
+            this.endDateLabel = new System.Windows.Forms.Label();
+            this.endDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.TransactionsButton = new System.Windows.Forms.Button();
+            this.StartDate = new System.Windows.Forms.Label();
+            this.TickerLabel = new System.Windows.Forms.Label();
             this.TransactionsStartDatePicker = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.TransactionsLabel = new System.Windows.Forms.Label();
@@ -38,11 +43,6 @@
             this.PnLReportDataGridView = new System.Windows.Forms.DataGridView();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.InsertNewTradesButton = new System.Windows.Forms.Button();
-            this.TickerLabel = new System.Windows.Forms.Label();
-            this.StartDate = new System.Windows.Forms.Label();
-            this.TransactionsButton = new System.Windows.Forms.Button();
-            this.endDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.endDateLabel = new System.Windows.Forms.Label();
             this.PnLlabel = new System.Windows.Forms.Label();
             this.DailyValuesTableButtonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TransactionsReportDataGridView)).BeginInit();
@@ -64,6 +64,58 @@
             this.DailyValuesTableButtonPanel.Name = "DailyValuesTableButtonPanel";
             this.DailyValuesTableButtonPanel.Size = new System.Drawing.Size(1852, 107);
             this.DailyValuesTableButtonPanel.TabIndex = 4;
+            // 
+            // endDateLabel
+            // 
+            this.endDateLabel.AutoSize = true;
+            this.endDateLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.endDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.endDateLabel.Location = new System.Drawing.Point(1087, 12);
+            this.endDateLabel.Name = "endDateLabel";
+            this.endDateLabel.Size = new System.Drawing.Size(225, 55);
+            this.endDateLabel.TabIndex = 17;
+            this.endDateLabel.Text = "End Date";
+            // 
+            // endDateTimePicker
+            // 
+            this.endDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.endDateTimePicker.Location = new System.Drawing.Point(1347, 10);
+            this.endDateTimePicker.Name = "endDateTimePicker";
+            this.endDateTimePicker.Size = new System.Drawing.Size(290, 61);
+            this.endDateTimePicker.TabIndex = 16;
+            this.endDateTimePicker.Value = new System.DateTime(2020, 12, 24, 0, 0, 0, 0);
+            // 
+            // TransactionsButton
+            // 
+            this.TransactionsButton.Location = new System.Drawing.Point(1678, 9);
+            this.TransactionsButton.Name = "TransactionsButton";
+            this.TransactionsButton.Size = new System.Drawing.Size(156, 68);
+            this.TransactionsButton.TabIndex = 13;
+            this.TransactionsButton.Text = "Get";
+            this.TransactionsButton.UseVisualStyleBackColor = true;
+            // 
+            // StartDate
+            // 
+            this.StartDate.AutoSize = true;
+            this.StartDate.BackColor = System.Drawing.SystemColors.Control;
+            this.StartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartDate.Location = new System.Drawing.Point(485, 13);
+            this.StartDate.Name = "StartDate";
+            this.StartDate.Size = new System.Drawing.Size(240, 55);
+            this.StartDate.TabIndex = 12;
+            this.StartDate.Text = "Start Date";
+            // 
+            // TickerLabel
+            // 
+            this.TickerLabel.AutoSize = true;
+            this.TickerLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.TickerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TickerLabel.Location = new System.Drawing.Point(1, 14);
+            this.TickerLabel.Name = "TickerLabel";
+            this.TickerLabel.Size = new System.Drawing.Size(154, 55);
+            this.TickerLabel.TabIndex = 11;
+            this.TickerLabel.Text = "Ticker";
             // 
             // TransactionsStartDatePicker
             // 
@@ -116,15 +168,15 @@
             // 
             // chart1
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea9);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Location = new System.Drawing.Point(1815, 291);
             this.chart1.Name = "chart1";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Name = "Series1";
-            series9.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
-            this.chart1.Series.Add(series9);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Name = "Series1";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(951, 1312);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "chartPrices";
@@ -138,58 +190,7 @@
             this.InsertNewTradesButton.TabIndex = 8;
             this.InsertNewTradesButton.Text = "Insert New Trade";
             this.InsertNewTradesButton.UseVisualStyleBackColor = true;
-            // 
-            // TickerLabel
-            // 
-            this.TickerLabel.AutoSize = true;
-            this.TickerLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.TickerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TickerLabel.Location = new System.Drawing.Point(1, 14);
-            this.TickerLabel.Name = "TickerLabel";
-            this.TickerLabel.Size = new System.Drawing.Size(154, 55);
-            this.TickerLabel.TabIndex = 11;
-            this.TickerLabel.Text = "Ticker";
-            // 
-            // StartDate
-            // 
-            this.StartDate.AutoSize = true;
-            this.StartDate.BackColor = System.Drawing.SystemColors.Control;
-            this.StartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartDate.Location = new System.Drawing.Point(485, 13);
-            this.StartDate.Name = "StartDate";
-            this.StartDate.Size = new System.Drawing.Size(240, 55);
-            this.StartDate.TabIndex = 12;
-            this.StartDate.Text = "Start Date";
-            // 
-            // TransactionsButton
-            // 
-            this.TransactionsButton.Location = new System.Drawing.Point(1678, 9);
-            this.TransactionsButton.Name = "TransactionsButton";
-            this.TransactionsButton.Size = new System.Drawing.Size(156, 68);
-            this.TransactionsButton.TabIndex = 13;
-            this.TransactionsButton.Text = "Get";
-            this.TransactionsButton.UseVisualStyleBackColor = true;
-            // 
-            // endDateTimePicker
-            // 
-            this.endDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.endDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.endDateTimePicker.Location = new System.Drawing.Point(1347, 10);
-            this.endDateTimePicker.Name = "endDateTimePicker";
-            this.endDateTimePicker.Size = new System.Drawing.Size(290, 61);
-            this.endDateTimePicker.TabIndex = 16;
-            this.endDateTimePicker.Value = new System.DateTime(2020, 12, 24, 0, 0, 0, 0);
-            // 
-            // endDateLabel
-            // 
-            this.endDateLabel.AutoSize = true;
-            this.endDateLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.endDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.endDateLabel.Location = new System.Drawing.Point(1087, 12);
-            this.endDateLabel.Name = "endDateLabel";
-            this.endDateLabel.Size = new System.Drawing.Size(225, 55);
-            this.endDateLabel.TabIndex = 17;
-            this.endDateLabel.Text = "End Date";
+            this.InsertNewTradesButton.Click += new System.EventHandler(this.InsertNewTradesButton_Click);
             // 
             // PnLlabel
             // 
@@ -205,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2778, 1615);
+            this.ClientSize = new System.Drawing.Size(2795, 1644);
             this.Controls.Add(this.PnLlabel);
             this.Controls.Add(this.InsertNewTradesButton);
             this.Controls.Add(this.chart1);
