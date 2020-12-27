@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.DailyValuesTableButtonPanel = new System.Windows.Forms.Panel();
             this.endDateLabel = new System.Windows.Forms.Label();
             this.endDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -159,6 +159,7 @@
             // 
             // TransactionsReportDataGridView
             // 
+            this.TransactionsReportDataGridView.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.TransactionsReportDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TransactionsReportDataGridView.Location = new System.Drawing.Point(25, 151);
             this.TransactionsReportDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -170,6 +171,7 @@
             // 
             // PnLReportDataGridView
             // 
+            this.PnLReportDataGridView.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.PnLReportDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PnLReportDataGridView.Location = new System.Drawing.Point(553, 150);
             this.PnLReportDataGridView.Margin = new System.Windows.Forms.Padding(2);
@@ -181,16 +183,20 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
+            this.chart1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
+            this.chart1.BorderSkin.PageColor = System.Drawing.Color.Transparent;
+            this.chart1.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.FrameThin6;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Location = new System.Drawing.Point(1112, 151);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Name = "Series1";
-            series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Name = "Series1";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(641, 677);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "chartPrices";
@@ -226,7 +232,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BackgroundImage = global::FinanceProject.Properties.Resources.vs_money;
+            this.BackgroundImage = global::FinanceProject.Properties.Resources.vs_money2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1804, 996);
             this.Controls.Add(this.PnLlabel);
@@ -236,6 +242,7 @@
             this.Controls.Add(this.TransactionsReportDataGridView);
             this.Controls.Add(this.DailyValuesTableButtonPanel);
             this.Controls.Add(this.TransactionsLabel);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
