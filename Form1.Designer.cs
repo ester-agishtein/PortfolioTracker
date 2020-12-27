@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.DailyValuesTableButtonPanel = new System.Windows.Forms.Panel();
             this.endDateLabel = new System.Windows.Forms.Label();
             this.endDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -187,16 +187,16 @@
             this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
             this.chart1.BorderSkin.PageColor = System.Drawing.Color.Transparent;
             this.chart1.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.FrameThin6;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Location = new System.Drawing.Point(1112, 151);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Name = "Series1";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Name = "Series1";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(641, 677);
             this.chart1.TabIndex = 7;
             this.chart1.Text = "chartPrices";
@@ -245,7 +245,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Trade Reports";
             this.DailyValuesTableButtonPanel.ResumeLayout(false);
             this.DailyValuesTableButtonPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TransactionsReportDataGridView)).EndInit();
